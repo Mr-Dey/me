@@ -4,6 +4,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	transition: width 0.4s ease;
 }
 :root {
 	--primary-color: #ff7613;
@@ -237,3 +238,25 @@ hr {
 		margin: 0 auto;
 	}
 }
+
+
+/* Animation */
+img:hover{
+	width: 105%;
+}
+
+.profile_name_firstName {
+	color: white;
+	font-weight: 200;
+	font-size: clamp(2rem, 8vw, 4rem);
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: -0.8rem;
+	transition: color 0.3s ease, text-shadow 0.3s ease; /* Add smooth transitions for color and text-shadow properties */
+  }
+  
+  .profile_name_firstName:hover {
+	color: #ffcc00; /* Change the color on hover */
+	text-shadow: 0 0 10px rgba(255, 204, 0, 0.8); /* Add a subtle shadow effect on hover */
+  }
+  
