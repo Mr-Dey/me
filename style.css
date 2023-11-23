@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
 
 * {
 	padding: 0;
@@ -8,13 +10,15 @@
 }
 :root {
 	--primary-color: #ff7613;
-	--text-color: #727171;
+	/* --text-color: #727171; */
+	--text-color: #a8a8a8;
 }
 html {
 	font-size: 10px;
 }
 body {
-	font-family: Inter, sans-serif;
+	/* font-family: Inter, sans-serif; */
+	font-family: 'Quicksand', sans-serif;
 	background-color: black;
 	color: white;
 }
@@ -64,6 +68,7 @@ a {
 	display: grid;
 	padding: 5rem;
 	background: #070707;
+	/* background: black; */
 	grid-template-columns: 1fr 1fr;
 	gap: 4rem;
 }
@@ -112,7 +117,9 @@ a {
 	gap: 2rem;
 }
 .profile_profileImg {
-	max-width: 250px;
+	/* max-width: 250px; */
+	max-width: 100%;
+	
 }
 .profile_name_firstName {
 	color: white;
@@ -233,15 +240,12 @@ hr {
 	border: none;
 	border-top: 2px solid rgba(128, 128, 128, 0.229);
 }
-@media only screen and (max-width: 768px) {
-	hr {
-		margin: 0 auto;
-	}
-}
+
+
 
 
 /* Animation */
-img:hover{
+/* img:hover{
 	width: 105%;
 }
 
@@ -253,10 +257,47 @@ img:hover{
 	display: block;
 	margin-bottom: -0.8rem;
 	transition: color 0.3s ease, text-shadow 0.3s ease; /* Add smooth transitions for color and text-shadow properties */
-  }
+}
   
-  .profile_name_firstName:hover {
+.profile_name_firstName:hover {
 	color: #ffcc00; /* Change the color on hover */
 	text-shadow: 0 0 10px rgba(255, 204, 0, 0.8); /* Add a subtle shadow effect on hover */
-  }
+} */
   
+p{
+	text-align: justify;
+	/* word-break: break-all; */
+	hyphens: auto;
+}
+
+@media only screen and (max-width: 768px) {
+	hr {
+		margin: 0 auto;
+		
+	}
+	p,h1,h3,h4{
+		text-align: center;
+	}
+	
+	img{
+		width: 70%;
+	}
+	.downloadBtn{
+		text-align: center;
+		color: #d8d8d8;
+		font-size: 15px;
+	}
+	.profile_profileImg{
+		text-align: center;
+	}
+	.interest_item{
+		margin: auto;
+	}
+	.social_item{
+		display: flex;
+		justify-content: center;
+	}
+	.container{
+		gap: 3rem;
+	}
+}
