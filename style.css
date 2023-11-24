@@ -6,7 +6,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	/* transition: width 0.4s ease; */
-	transition: all 0.3s ease;
+	transition: all 0.5s ease;
 }
 :root {
 	--primary-color: #ff7613;
@@ -25,6 +25,17 @@ body {
 img {
 	width: 100%;
 }
+.dp{
+	border: 1.5px solid orange;
+	border-radius: 1.5rem;
+}
+
+.dp:hover {
+	transform: scale(1.1);
+	border: 1.5px solid orange;
+	border-radius: 8rem;
+  }
+
 a {
 	text-decoration: none;
 	color: white;
@@ -115,7 +126,6 @@ a {
 	gap: 2rem;
 }
 .profile_profileImg {
-	/* max-width: 250px; */
 	max-width: 100%;
 	
 }
@@ -139,12 +149,38 @@ a {
 	font-weight: 400;
 	text-transform: uppercase;
 }
+.profile_description{
+	padding: 10px 0px 10px 0px;
+
+}
 .downloadBtn {
-	display: block;
-	text-decoration: underline;
+	display:block;
+	padding: 4px;
 	font-size: 1.6rem;
 	margin-top: 1rem;
 	color: #a8a8a8;
+	text-align: center;
+	border: 0.4px solid gray;
+	border-radius: .8rem;
+	margin:auto;
+	width: 60%;
+}
+
+/* .downloadBtn:hover{
+	font-size: 1.7rem;
+	color: #ff7613;
+	border-color: #ff7613;
+	border-radius: 5rem;
+	width: 30%;
+}   version 1*/
+
+.downloadBtn:hover{
+	font-size: 1.7rem;
+	color: white;
+	border-color:whitesmoke;
+	border-radius: 5rem;
+	background-color: #ff7613;
+	width: 30%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -240,11 +276,7 @@ hr {
 }
     
 
-.downloadBtn:hover{
-	font-size: 1.7rem;
-	color: #ff7613;
-	font-weight: bolder;
-}
+
 
 
 
@@ -286,7 +318,16 @@ hr {
 	}
 	.container{
 		gap: 3rem;
-	}	
+	}
+	.downloadBtn:hover{
+		width: 50%;
+	}
+	.dp:hover {
+		transform: scale(1.1);
+		border: 1.5px solid orange;
+		border-radius: 15rem;
+	  }
+	
 }
 
 @media (prefers-color-scheme: light) {
@@ -296,7 +337,10 @@ hr {
 	.item_title,.ref_name,.profile_name_firstName{
 		color: black;
 	}
-	.description,span{
+	.item_title{
+		font-weight: bold;
+	}
+	.description,span,.profile_title{
 		color: #070707;
 	}
 	
