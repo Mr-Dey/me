@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
 
@@ -6,20 +5,19 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	transition: width 0.4s ease;
+	/* transition: width 0.4s ease; */
+	transition: all 0.3s ease;
 }
 :root {
 	--primary-color: #ff7613;
-	/* --text-color: #727171; */
 	--text-color: #a8a8a8;
 }
 html {
 	font-size: 10px;
 }
 body {
-	/* font-family: Inter, sans-serif; */
 	font-family: 'Quicksand', sans-serif;
-	background-color: black;
+	background-color:black;
 	color: white;
 }
 
@@ -146,10 +144,9 @@ a {
 	text-decoration: underline;
 	font-size: 1.6rem;
 	margin-top: 1rem;
+	color: #a8a8a8;
 }
-.downloadBtn:hover {
-	color: var(--primary-color);
-}
+
 @media only screen and (max-width: 768px) {
 	.profile_container {
 		flex-direction: column;
@@ -226,6 +223,7 @@ a {
 }
 .social_item:hover {
 	color: var(--primary-color);
+	font-size: 1.7rem;
 }
 .social_item svg {
 	width: 2rem;
@@ -240,52 +238,40 @@ hr {
 	border: none;
 	border-top: 2px solid rgba(128, 128, 128, 0.229);
 }
+    
 
-
-
-
-/* Animation */
-/* img:hover{
-	width: 105%;
+.downloadBtn:hover{
+	font-size: 1.7rem;
+	color: #ff7613;
+	font-weight: bolder;
 }
 
-.profile_name_firstName {
-	color: white;
-	font-weight: 200;
-	font-size: clamp(2rem, 8vw, 4rem);
-	text-transform: uppercase;
-	display: block;
-	margin-bottom: -0.8rem;
-	transition: color 0.3s ease, text-shadow 0.3s ease; /* Add smooth transitions for color and text-shadow properties */
-}
-  
-.profile_name_firstName:hover {
-	color: #ffcc00; /* Change the color on hover */
-	text-shadow: 0 0 10px rgba(255, 204, 0, 0.8); /* Add a subtle shadow effect on hover */
-} */
-  
-p{
-	text-align: justify;
-	/* word-break: break-all; */
-	hyphens: auto;
-}
+
 
 @media only screen and (max-width: 768px) {
 	hr {
-		margin: 0 auto;
-		
+		margin: 0 auto;		
 	}
-	p,h1,h3,h4{
+	p,h1,h4{
 		text-align: center;
 	}
-	
+	.title{
+		text-align: center;
+		font-size: 2rem;
+	}
+	.profile_name_lastName{
+		font-size: 6rem;
+	}
+	.profile_name_firstName{
+		font-size: 4rem;
+	}
 	img{
 		width: 70%;
 	}
 	.downloadBtn{
 		text-align: center;
-		color: #d8d8d8;
-		font-size: 15px;
+		color:#ff7613;
+		font-size: 1.5rem;
 	}
 	.profile_profileImg{
 		text-align: center;
@@ -294,10 +280,28 @@ p{
 		margin: auto;
 	}
 	.social_item{
+		color: #ff7613;
 		display: flex;
 		justify-content: center;
 	}
 	.container{
 		gap: 3rem;
-	}
+	}	
 }
+
+@media (prefers-color-scheme: light) {
+	.container{
+		background-color: white;
+	}
+	.item_title,.ref_name,.profile_name_firstName{
+		color: black;
+	}
+	.description,span{
+		color: #070707;
+	}
+	
+	body{
+		background-image: radial-gradient(orange 5.66%, #ffffff 94.35%);
+	}
+
+  }
