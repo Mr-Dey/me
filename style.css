@@ -288,6 +288,11 @@ hr {
 	font-size: 1.5rem;
 }
 
+.contact_info{
+	padding: 20px;
+	border: 1px solid orange;
+	border-radius: 10px;
+}
 
 
 
@@ -345,7 +350,7 @@ hr {
 	.container{
 		background-color: white;
 	}
-	.item_title,.ref_name,.profile_name_firstName{
+	.item_title,.ref_name,.profile_name_firstName,.mail{
 		color: black;
 	}
 	.item_title{
