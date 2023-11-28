@@ -303,6 +303,18 @@ hr {
 	padding: 5px;
 }
 
+#mail{
+	border-radius: 10px;
+}
+
+#mail:hover{
+	background-color: #ff7613;
+	color: white;
+	font-size: 1.6rem;
+	border-radius: 10px;
+	padding: 0px 10px;
+
+}
 
 
 
