@@ -366,6 +366,9 @@ hr {
 		border: 1.5px solid orange;
 		border-radius: 15rem;
 	  }
+	.container{
+		width: 95%;
+	}
 	
 }
 
@@ -384,7 +387,9 @@ hr {
 	}
 	
 	body{
-		background-image: radial-gradient(orange 5.66%, #ffffff 94.35%);
+		/* background-image: radial-gradient(orange 5.66%, #ffffff 94.35%); */
+		background-image: url(images/background/light/background\ \(2\).jpg);
+		background-repeat:repeat;
+		background-size: 400px;
 	}
-
   }
