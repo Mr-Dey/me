@@ -16,8 +16,11 @@ html {
 	font-size: 10px;
 }
 body {
+	transition:none;
 	font-family: 'Quicksand', sans-serif;
-	background-color:black;
+	background-image: url(images/background/dark/background\ \(3\).jpg);
+	background-size: 100vh;
+	background-repeat: repeat;
 	color: white;
 }
 
