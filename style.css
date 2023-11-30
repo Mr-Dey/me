@@ -9,8 +9,6 @@
 	transition: all 0.5s ease;
 }
 
-
-
 :root {
 	--primary-color: #ff7613;
 	--text-color: #a8a8a8;
@@ -89,14 +87,7 @@ a {
 	grid-template-columns: 1fr 1fr;
 	gap: 4rem;
 }
-@media only screen and (max-width: 768px) {
-	.container {
-		width: 100%;
-		grid-template-columns: 1fr;
-		padding: 3rem;
-		gap: 7rem;
-	}
-}
+
 .profile {
 	grid-column: 1 / -1;
 	margin-bottom: 2rem;
@@ -119,14 +110,8 @@ a {
 .group-3 > div {
 	flex: 1;
 }
-@media only screen and (max-width: 768px) {
-	.profile {
-		margin-bottom: 0;
-	}
-	.group-3 {
-		flex-direction: column;
-	}
-}
+
+
 
 /* profile */
 .profile_container {
@@ -189,11 +174,7 @@ a {
 	width: 50%;
 }
 
-@media only screen and (max-width: 768px) {
-	.profile_container {
-		flex-direction: column;
-	}
-}
+
 
 /* Expertise */
 .skills_list {
@@ -336,10 +317,32 @@ hr {
 
 
 
-
 /* mobile view*/
 
 @media only screen and (max-width: 768px) {
+	@media only screen and (max-width: 768px) {
+		.container {
+			grid-template-columns: 1fr;
+			padding: 3rem;
+			gap: 4rem;
+			width: 90%;
+		}
+	}
+	@media only screen and (max-width: 768px) {
+		.profile {
+			margin-bottom: 0;
+		}
+		.group-3 {
+			flex-direction: column;
+		}
+	}
+	
+	@media only screen and (max-width: 768px) {
+		.profile_container {
+			flex-direction: column;
+		}
+	}
+
 	hr {
 		margin: 0 auto;		
 	}
@@ -375,11 +378,8 @@ hr {
 		color: #ff7613;
 		display: flex;
 		align-items: center;
-	}
-	.container{
-		gap: 3rem;
-		width: 95%;
-	}
+		justify-content: center;
+	}		
 	
 	.dp:hover {
 		transform: scale(1.1);
@@ -395,7 +395,6 @@ hr {
 	}
 	
 }
-
 
 
 /* light theme */
@@ -424,7 +423,7 @@ hr {
 	}
   }
 
-/* view when color scheme is light and viewing on mobile 768p max */
+/*light theme with mobie view*/
   @media (prefers-color-scheme: light) and (max-width: 768px) {
 	  body{
 		  background-size: 400px;
@@ -432,7 +431,7 @@ hr {
 	}
 
 
-/* view when color scheme is dark and viewing on mobile 768p max */
+/* dark theme with mobile view */
 	@media (prefers-color-scheme: dark) and (max-width: 768px) {
 	body{
 		background-size: 200px;
