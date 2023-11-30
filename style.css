@@ -319,6 +319,7 @@ hr {
 
 #mail{
 	border-radius: 10px;
+	color: #a8a8a8;
 }
 
 #mail:hover{
@@ -400,7 +401,7 @@ hr {
 		border-radius: 15px;
 		margin: 15px auto;
 	}
-	.item_title,.ref_name,.profile_name_firstName,.mail{
+	.item_title,.ref_name,.profile_name_firstName,#mail{
 		color: black;
 	}
 	.item_title{
