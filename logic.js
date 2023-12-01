@@ -1,10 +1,26 @@
-// let mail=document.getElementById("mail");
+const navBar =document.querySelector(".nav");
+const navButton=document.querySelector("#navButton");
+const navList=document.querySelector(".navList");
+
+let showNavbar=true;
+
+navList.style.transition="all 0.5s ease";
+navList.style.height="240px";
+navList.style.overflowX="auto";
+// navList.style.backdropFilter="blur(6px)";
 
 
-// mail.addEventListener("mouseover",()=>{
-//     mail.style.backgroundColor="#ff7613";
-//     mail.style.color="white";
-//     mail.style.fontSize="1.6rem";
-//     mail.style.borderRadius="8px";
-//     mail.style.padding="2px";
-// })
+
+navButton.addEventListener('click',()=>{
+    if(showNavbar==true){
+        showNavbar=false;
+        navList.style.height="0px";
+        // navList.style.display="none";
+    }
+    else{
+        showNavbar=true;
+        navList.style.height="240px";
+        // navList.style.display="block";
+    }
+    console.log(showNavbar);
+})
