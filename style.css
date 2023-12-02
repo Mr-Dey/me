@@ -328,8 +328,9 @@ hr {
 	/* beta */
 
 	.nav{
-		backdrop-filter: blur(2px);
-		background:rgba(255, 166, 0, 0.11);
+		backdrop-filter: blur(3px);
+		/* background:rgba(255, 166, 0, 0.11); */
+		background:#ff751311;
 		text-align: center;
 		width: 90%;
 		margin: 15px auto;
@@ -344,7 +345,6 @@ hr {
 	
 	.navList{
 		position: relative;
-		padding: 2px;
 		margin:20px auto;
 		width: 80%;
 	}
@@ -361,14 +361,22 @@ hr {
 		font-size: 1.7rem;
 	}
 	.navbutton{
-		padding: 8px;
+		/* position: absolute; */
+		padding: 10px;
 		border: none;
 		border-radius: 80px;
+		margin: 5px;
 		margin-left: auto;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		transition: none;
+		background-color: #a8a8a800;
+		backdrop-filter: blur(10px);
+		border: 1.5px solid orange;
+		color: #ff7513;
 	}
+
 	
 	/* beta ends */
 
@@ -482,4 +490,25 @@ hr {
 	body{
 		background-size: 200px;
 	}
+
+	/* beta */
+	.navListItems{
+		transition: none;
+		color: white;
+		border-bottom: 2px solid rgba(255, 255, 255, 0.493);
+	}
+	.navbutton{
+		transition: none;
+		background-color: rgba(255, 255, 255, 0);
+		backdrop-filter: blur(10px);
+		border: 1.5px solid rgba(255, 166, 0, 0.623);
+		color: #ff7613;
+	}
+	.nav{
+		border: 1.5px solid grey;
+		background:rgba(194, 194, 194, 0.11);
+		backdrop-filter: blur(2px);
+	}
+	/* beta */
+
   }
