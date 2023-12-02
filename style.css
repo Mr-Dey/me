@@ -326,12 +326,11 @@ hr {
 @media only screen and (max-width: 768px) {
 
 	/* beta */
-
 	.nav{
 		backdrop-filter: blur(3px);
 		background:#ff751311;
 		text-align: center;
-		width: 90%;
+		width: 95%;
 		margin: 15px auto;
 		display: flex;
 		flex-direction: column;
@@ -356,7 +355,6 @@ hr {
 		font-size: 1.7rem;
 	}
 	.navbutton{
-		/* position: absolute; */
 		padding: 10px;
 		border: none;
 		border-radius: 80px;
@@ -379,15 +377,18 @@ hr {
 		border: 1.5px solid white;
 	}
 
+	.description {
+		text-align:center;
+	}
 	
 	/* beta ends */
 
 
 	.container {
 		grid-template-columns: 1fr;
-		padding: 3rem;
+		padding: 1.5rem;
 		gap: 4rem;
-		width: 90%;
+		width: 95%;
 	}
 	.profile {
 		margin-bottom: 0;
@@ -419,13 +420,17 @@ hr {
 		width: 70%;
 	}
 	.downloadBtn{
-		width: 55%;
+		width: 70%;
 	}
 	.downloadBtn:hover{
-		width: 100%;
+		width: 80%;
 	}
 	.profile_profileImg{
 		text-align: center;
+	}
+	.interest_items{
+		margin: auto;
+		width: 60%;
 	}
 	.interest_item{
 		margin: auto;
