@@ -329,7 +329,6 @@ hr {
 
 	.nav{
 		backdrop-filter: blur(3px);
-		/* background:rgba(255, 166, 0, 0.11); */
 		background:#ff751311;
 		text-align: center;
 		width: 90%;
@@ -343,12 +342,8 @@ hr {
 		padding: 2px;
 	}
 	
-	.navList{
-		position: relative;
-		margin:20px auto;
-		width: 80%;
-	}
 	.navListItems{
+		transition: none;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.493);
 		padding: 5px;
 		height: 30px;
@@ -375,6 +370,13 @@ hr {
 		backdrop-filter: blur(10px);
 		border: 1.5px solid orange;
 		color: #ff7513;
+	}
+
+	.navbutton_clicked{
+		transition: all 0.1s ease-in-out;
+		background-color: rgba(255, 166, 0, 0.678);
+		color: white;
+		border: 1.5px solid white;
 	}
 
 	
@@ -503,6 +505,12 @@ hr {
 		backdrop-filter: blur(10px);
 		border: 1.5px solid rgba(255, 166, 0, 0.623);
 		color: #ff7613;
+	}
+	.navbutton_clicked{
+		transition: all 0.5s ease-in-out;
+		background-color: rgba(255, 166, 0, 0.678);
+		color: white;
+		border: 1.5px solid white;
 	}
 	.nav{
 		border: 1.5px solid grey;
