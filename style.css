@@ -87,7 +87,6 @@ a {
 	display: grid;
 	padding: 5rem;
 	background: #070707;
-	/* background: black; */
 	grid-template-columns: 1fr 1fr;
 	gap: 4rem;
 }
@@ -343,36 +342,26 @@ hr {
 	.navContacts{
 		display: flex;
 		align-items: center;
-		/* margin: auto; */
+		justify-content: center;
+		text-align: center;
 	}
 	.navContactItems{
+		transition: none;
 		list-style: none;
 		display: flex;
 		flex-direction: row;
+		color: #ff7613;
+		
 	}
 	.navContactItems li{
-		padding:20px;
-	}
-	.navListItems{
-		transition: none;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.493);
-		padding: 5px;
-		height: 30px;
-		list-style: none;
-	}
-	.navListItems.end{
-		border: none;
-	}
-	.navListItems:hover{
-		font-size: 1.7rem;
+		padding:15px;
 	}
 	.navbutton{
 		position: absolute;
+		margin-left: 85%;
 		padding: 10px;
 		border: none;
 		border-radius: 80px;
-		margin: 5px;
-		margin-left: auto;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -389,6 +378,21 @@ hr {
 		color: white;
 		border: 1.5px solid white;
 	}
+
+	.navListItems{
+		transition: none;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.493);
+		padding: 5px;
+		height: 30px;
+		list-style: none;
+	}
+	.navListItems.end{
+		border: none;
+	}
+	.navListItems:hover{
+		font-size: 1.7rem;
+	}
+	
 
 	.description {
 		text-align:center;
@@ -430,7 +434,7 @@ hr {
 		font-size: 4rem;
 	}
 	img{
-		width: 70%;
+		width: 60%;
 	}
 	.downloadBtn{
 		width: 70%;
