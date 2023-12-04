@@ -1,10 +1,15 @@
+//navbar Properities
 const nav =document.querySelector(".nav");
 const navButton=document.querySelector("#navButton");
 const navList=document.querySelector(".navList");
 const navListItems=document.querySelector(".navListItems");
 
-let showNavbar=false;
+//Container Properties
+const downloadButton=document.querySelector(".downloadBtn");
 
+
+//navbar Logic
+let showNavbar=false;
 navButton.addEventListener('click',()=>{
 
     if(showNavbar==false){
@@ -18,4 +23,9 @@ navButton.addEventListener('click',()=>{
         navList.classList.remove("navList_Clicked");
         navButton.classList.remove("navbutton_clicked");
     }
+})
+
+//downloadButton Logic
+downloadButton.addEventListener("click",()=>{
+    downloadButton.href='./pdf/ResumeDark.pdf';
 })
