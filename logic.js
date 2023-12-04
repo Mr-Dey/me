@@ -12,6 +12,7 @@ navButton.addEventListener('click',()=>{
         navList.classList.add("navList_Clicked");
         navButton.classList.add("navbutton_clicked");
     }
+    
     else{
         showNavbar=false;
         navList.classList.remove("navList_Clicked");
