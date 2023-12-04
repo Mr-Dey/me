@@ -6,6 +6,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	transition: all 0.5s ease;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .nav{
@@ -350,12 +351,13 @@ hr {
 		list-style: none;
 		display: flex;
 		flex-direction: row;
-		color: #ff7613;
+		color: #ff7513;
 		
 	}
 	.navContactItems li{
 		padding:15px;
 	}
+
 	.navbutton{
 		position: absolute;
 		margin-left: 80%;
@@ -380,11 +382,16 @@ hr {
 	}
 
 	.navListItems{
+		color: #070707;
 		transition: none;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.493);
 		padding: 5px;
 		height: 30px;
 		list-style: none;
+	}
+	.navListItems a{
+		font-weight: bolder;
+		color: #070707ad;
 	}
 	.navListItems.end{
 		border: none;
@@ -442,8 +449,8 @@ hr {
 		text-align: center;
 	}
 	.interest_items{
-		margin: auto;
-		width: 60%;
+		margin: 20px auto;
+		width: 80%;
 	}
 	.interest_item{
 		margin: auto;
@@ -517,16 +524,19 @@ hr {
 		color: white;
 		border-bottom: 2px solid rgba(255, 255, 255, 0.493);
 	}
+	.navListItems a{
+		color: rgba(255, 255, 255, 0.678);
+	}
 	.navbutton{
 		transition: none;
 		background-color: rgba(255, 255, 255, 0);
 		backdrop-filter: blur(10px);
-		border: 1.5px solid rgba(255, 166, 0, 0.623);
+		border: 1.5px solid rgba(255, 166, 0, 0.644);
 		color: #ff7613;
 	}
 	.navbutton_clicked{
 		transition: all 0.5s ease-in-out;
-		background-color: rgba(255, 166, 0, 0.678);
+		background-color: rgba(255, 166, 0, 0.733);
 		color: white;
 		border: 1.5px solid white;
 	}
