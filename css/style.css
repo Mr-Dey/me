@@ -9,6 +9,10 @@
 	font-family: 'Quicksand', sans-serif;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 .nav{
 	display: none;
 }
@@ -325,7 +329,6 @@ hr {
 
 @media only screen and (max-width: 768px) {
 
-	/* beta */
 	.nav{
 		backdrop-filter: blur(3px);
 		background:#ff751311;
@@ -374,8 +377,10 @@ hr {
 		color: #ff7513;
 	}
 
+
+
 	.navbutton_clicked{
-		transition: all 0.1s ease-in-out;
+		transition: all 1s ease-in-out;
 		background-color: rgba(255, 166, 0, 0.678);
 		color: white;
 		border: 1.5px solid white;
@@ -409,8 +414,6 @@ hr {
 		padding: 5px;
 	}
 
-
-
 	.navListItems a{
 		font-weight: bolder;
 		color: #070707ad;
@@ -422,10 +425,6 @@ hr {
 		font-size: 1.7rem;
 	}
 	
-	
-	/* beta ends */
-
-
 	.container {
 		grid-template-columns: 1fr;
 		padding: 1.5rem;
@@ -539,7 +538,6 @@ hr {
 		background-size: 200px;
 	}
 
-	/* beta */
 	.navListItems{
 		transition: none;
 		color: white;
@@ -566,6 +564,5 @@ hr {
 		background:rgba(194, 194, 194, 0.11);
 		backdrop-filter: blur(2px);
 	}
-	/* beta */
 
   }

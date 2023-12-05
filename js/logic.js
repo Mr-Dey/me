@@ -10,7 +10,7 @@ const downloadButton=document.querySelector(".downloadBtn");
 
 //navbar Logic
 let showNavbar=false;
-navButton.addEventListener('click',()=>{
+navButton.addEventListener('mouseup',()=>{
 
     if(showNavbar==false){
         showNavbar=true;
