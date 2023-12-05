@@ -349,15 +349,21 @@ hr {
 		justify-content: center;
 		text-align: center;
 	}
-	.navContactItems{
+	.navContactItem{
 		transition: none;
 		list-style: none;
 		display: flex;
 		flex-direction: row;
-		color: #ff7513;
-		
 	}
-	.navContactItems li{
+	.navContactItems{
+		color: #ff7513;
+	}
+	.navContactItems:active{
+		color: rgb(255, 166, 0);
+		transition: all .5s ease-in-out;
+		transform: scale(1.1);
+	}
+	.navContactItem li{
 		padding:15px;
 	}
 
@@ -395,6 +401,10 @@ hr {
 		list-style: none;
 	}
 
+	.navListItems:active{
+		font-size: 1.7rem;
+	}
+
 	.navList{
 		transition: all .5s ease, height 0.3s ease, opacity 0.3s ease;
 		opacity: 0;
@@ -420,9 +430,6 @@ hr {
 	}
 	.navListItems.end{
 		border: none;
-	}
-	.navListItems:hover{
-		font-size: 1.7rem;
 	}
 	
 	.container {
