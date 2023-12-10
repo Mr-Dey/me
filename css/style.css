@@ -349,7 +349,7 @@ hr {
 		justify-content: center;
 		text-align: center;
 	}
-	.navContactItem{
+	.navContactItems{
 		transition: none;
 		list-style: none;
 		display: flex;
