@@ -9,6 +9,10 @@
 	font-family: 'Quicksand', sans-serif;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 .nav{
 	display: none;
 }
@@ -24,7 +28,7 @@ html {
 body {
 	transition:none;
 	font-family: 'Quicksand', sans-serif;
-	background-image: url(/images/background/dark/background\ \(3\).jpg);
+	background-image: url(../images/background/dark/background\ \(3\).jpg);
 	background-size: 800px;
 	background-repeat: repeat;
 	color: white;
@@ -325,7 +329,6 @@ hr {
 
 @media only screen and (max-width: 768px) {
 
-	/* beta */
 	.nav{
 		backdrop-filter: blur(3px);
 		background:#ff751311;
@@ -346,15 +349,21 @@ hr {
 		justify-content: center;
 		text-align: center;
 	}
-	.navContactItems{
+	.navContactItem{
 		transition: none;
 		list-style: none;
 		display: flex;
 		flex-direction: row;
-		color: #ff7513;
-		
 	}
-	.navContactItems li{
+	.navContactItems{
+		color: #ff7513;
+	}
+	.navContactItems:active{
+		color: rgb(255, 166, 0);
+		transition: all .5s ease-in-out;
+		transform: scale(1.1);
+	}
+	.navContactItem li{
 		padding:15px;
 	}
 
@@ -374,8 +383,10 @@ hr {
 		color: #ff7513;
 	}
 
+
+
 	.navbutton_clicked{
-		transition: all 0.1s ease-in-out;
+		transition: all 1s ease-in-out;
 		background-color: rgba(255, 166, 0, 0.678);
 		color: white;
 		border: 1.5px solid white;
@@ -388,6 +399,10 @@ hr {
 		padding: 5px;
 		height: 30px;
 		list-style: none;
+	}
+
+	.navListItems:active{
+		font-size: 1.7rem;
 	}
 
 	.navList{
@@ -409,8 +424,6 @@ hr {
 		padding: 5px;
 	}
 
-
-
 	.navListItems a{
 		font-weight: bolder;
 		color: #070707ad;
@@ -418,14 +431,7 @@ hr {
 	.navListItems.end{
 		border: none;
 	}
-	.navListItems:hover{
-		font-size: 1.7rem;
-	}
 	
-	
-	/* beta ends */
-
-
 	.container {
 		grid-template-columns: 1fr;
 		padding: 1.5rem;
@@ -519,8 +525,7 @@ hr {
 	}
 	
 	body{
-		/* background-image: radial-gradient(orange 5.66%, #ffffff 94.35%); */
-		background-image: url(/images/background/light/bg2.jpg);
+		background-image: url(../images/background/light/bg2.jpg);
 		background-repeat:repeat;
 		background-size: 900px;
 	}
@@ -540,7 +545,6 @@ hr {
 		background-size: 200px;
 	}
 
-	/* beta */
 	.navListItems{
 		transition: none;
 		color: white;
@@ -567,6 +571,5 @@ hr {
 		background:rgba(194, 194, 194, 0.11);
 		backdrop-filter: blur(2px);
 	}
-	/* beta */
 
   }
