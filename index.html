@@ -7,15 +7,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume</title>
   <script src="https://unpkg.com/feather-icons"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./js/logic.js"></script>
 </head>
-
 <body>
+
+  <div class="nav">
+    <div class="navContacts">
+      <ul class="navContactItems">
+        <li>
+          <a href="https://github.com/Mr-Dey/">
+            <i class="navContactItems" data-feather="github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/supreview">
+            <i class="navContactItems" data-feather="youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://in.linkedin.com/in/subhasish-dey-007">
+            <i class="navContactItems" data-feather="linkedin"></i>
+          </a>
+        </li>
+      </ul>
+      <button class="navbutton" id="navButton">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+    <ul class="navList">
+      <li class="navListItems start"><a href="#EXPERTISE">EXPERTISE</a></li>
+      <li class="navListItems "><a href="#PROJECTS">PROJECTS</a></li>
+      <li class="navListItems "><a href="#EDUCATION">EDUCATION</a></li>
+      <li class="navListItems "><a href="#CERTIFICATION">CERTIFICATION</a></li>
+      <li class="navListItems "><a href="#EXPERIENCE">EXPERIENCE</a></li>
+      <li class="navListItems "><a href="#AWARDS">AWARDS</a></li>
+      <li class="navListItems "><a href="#INTEREST">INTEREST</a></li>
+      <li class="navListItems end"><a href="#CONTACT">CONTACT</a></li>
+
+    </ul>
+  </div>
+
   <div class="container">
     <div class="profile">
       <div class="profile_container">
         <div class="profile_profileImg">
-          <img src="./images/profileImage.png" alt="shaif arfan">
+          <img class="dp" src="./images/profileImage.png" alt="Mr-Dey image">
         </div>
         <div>
           <h1 class="profile_name">
@@ -26,13 +63,13 @@
           <p class="description profile_description">
             Dedicated and proficient IT professional with a passion for programming and a comprehensive skill set encompassing Python, Java, HTML, CSS, JavaScript, Node.js, Django, GitHub CLI, bash etc. Currently pursuing a Master of Computer Applications (MCA) degree, I bring a solid foundation in software development, coupled with a keen aptitude for problem-solving and innovative thinking.
           </p>
-          <a class="downloadBtn" href="./cv.pdf" download="Resume.pdf">Download Resume</a>
+          <a class="downloadBtn" href="./pdf/cv.pdf" download="Resume.pdf">Download Resume</a>
         </div>
-      </div>
+      </div>href
     </div>
     <div class="group-1">
-      <div class="skills">
-        <h3 class="title">Expertise</h3>
+      <div class="skills" id="EXPERTISE">
+        <h3 class="title" >Expertise</h3>
         <ul class="skills_list description">
           <li>Front-End: HTML, CSS, JavaScript, React.js, Angular</li>
           <li>Back-End: Node.js, Python (Django, Flask), PHP (Laravel), JAVA</li>
@@ -42,7 +79,7 @@
           <li>Cloud Platforms: AWS, Heroku, Koyeb</li>
         </ul>
       </div>
-      <div class="ref">
+      <div class="ref" id="PROJECTS">
         <h3 class="title">PROJECTS</h3>
         <div class="ref_item">
           <h4 class="ref_name">Encryption & Decryption</h4>
@@ -54,8 +91,8 @@
         </div>
       </div>
 
-      <div class="edu">
-        <h3 class="title">Education</h3>
+      <div class="edu" id="EDUCATION">
+        <h3 class="title" >Education</h3>
         <div class="edu_item">
           <p class="item_preTitle">2022-2024</p>
           <h4 class="item_title">MCA in CSE (MASTER IN COMPUTER APPLICATION)</h4>
@@ -72,7 +109,7 @@
         </div>
       </div>
 
-      <div class="certification">
+      <div class="certification" id="CERTIFICATION">
         <h3 class="title">certification</h3>
         <div class="certification_item">
           <p class="item_preTitle"></p>
@@ -88,7 +125,7 @@
       </div>
     </div>
     <div class="group-2">
-      <div class="exp">
+      <div class="exp" id="EXPERIENCE">
         <h3 class="title">Experience</h3>
         <div class="exp_item">
           <p class="item_preTitle">2022 - present</p>
@@ -108,34 +145,33 @@
         </div>
         
       </div>
-      <div class="awards">
+      <div class="awards" id="AWARDS">
         <h3 class="title">Awards</h3>
         <div class="awards_item">
           <p class="item_preTitle"></p>
           <h4 class="item_title"></h4>
-          <p class=" description">
-           
-<b>Client Satisfaction:</b><br>
-- Received consistently positive feedback from clients for clear communication, collaborative problem-solving, and delivering solutions that align with their business objectives.
-<br>
-<b> Data Security Implementation:</b> <br>
-- Successfully implemented robust security measures, including encryption and secure coding practices using python Fernet.
-<br>
-<b>Responsive Design Implementation:</b><br>
-- Implemented responsive design principles, ensuring seamless user experiences across various devices and screen sizes.
-<br>
-<b>Continuous Learning and Innovation:</b><br>
- - Demonstrated a commitment to continuous learning by staying updated on industry trends and integrating new technologies, contributing to a culture of innovation within the development team.
- <br>
-<b>Problem Resolution:</b><br>
- - Effectively identified and resolved complex technical issues, demonstrating strong problem-solving skills and a proactive approach to troubleshooting.
+          <p class=" description"> 
+          <b>Client Satisfaction:</b><br>
+          - Received consistently positive feedback from clients for clear communication, collaborative problem-solving, and delivering solutions that align with their business objectives.
+          <br>
+          <b> Data Security Implementation:</b> <br>
+          - Successfully implemented robust security measures, including encryption and secure coding practices using python Fernet.
+          <br>
+          <b>Responsive Design Implementation:</b><br>
+          - Implemented responsive design principles, ensuring seamless user experiences across various devices and screen sizes.
+          <br>
+          <b>Continuous Learning and Innovation:</b><br>
+          - Demonstrated a commitment to continuous learning by staying updated on industry trends and integrating new technologies, contributing to a culture of innovation within the development team.
+          <br>
+          <b>Problem Resolution:</b><br>
+          - Effectively identified and resolved complex technical issues, demonstrating strong problem-solving skills and a proactive approach to troubleshooting.
 
           </p>
         </div>
         
       </div>
 
-      <div class="interest">
+      <div class="interest" id="INTEREST">
         <h3 class="title">Interest</h3>
         <div class="interest_items">
           <div class="interest_item">
@@ -145,6 +181,10 @@
           <div class="interest_item">
             <i data-feather="youtube"></i>
             <span>Youtuber</span>
+          </div>
+          <div class="interest_item">
+            <i data-feather="github"></i>
+            <span>GitHub</span>
           </div>
           <div class="interest_item">
             <i data-feather="map"></i>
@@ -168,17 +208,19 @@
     </div>
     <hr>
     <div class="group-3">
-      <div class="contact">
+      <div class="contact" id="CONTACT">
         <h3 class="title">Contact</h3>
         <div class="contact_info">
           <p class="description">
             West Bengal, Barrackpore
           </p>
           <p class="description">
-            +91 **********
+            +91 * * * * * * * * * *
           </p>
           <p class="description">
-            subhasishdey619@gmail.com
+            <a class="mail" id="mail" href="mailto:subhasishdey619@gmail.com">
+              subhasishdey619@gmail.com
+            </a>
           </p>
         </div>
       </div>
