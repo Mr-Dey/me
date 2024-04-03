@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
-
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	transition: all 0.5s ease;
 	font-family: 'Quicksand', sans-serif;
+	scrollbar-width: none;
 }
 
 html{
@@ -345,15 +345,16 @@ hr {
 	}
 	.navContacts{
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
 	}
 	.navContactItem{
 		transition: none;
-		list-style: none;
-		display: flex;
-		flex-direction: row;
+		list-style:inside;
+		/* display: flex; */
+		/* flex-direction: column; */
 	}
 	.navContactItems{
 		color: #ff7513;
@@ -363,8 +364,13 @@ hr {
 		transition: all .5s ease-in-out;
 		transform: scale(1.1);
 	}
+	.navContactItem{
+		display: flex;
+		list-style: none;
+		justify-content: center;
+	}
 	.navContactItem li{
-		padding:15px;
+		padding: 20%;
 	}
 
 	.navbutton{
