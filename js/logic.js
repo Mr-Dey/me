@@ -25,7 +25,7 @@ navButton.addEventListener('mouseup',()=>{
     }
 })
 
-//downloadButton Logic
-// downloadButton.addEventListener("click",()=>{
-//     downloadButton.href='./pdf/Resume24.pdf';
-// })
+// downloadButton Logic
+downloadButton.addEventListener("click",()=>{
+    downloadButton.href='./pdf/Resume 24.pdf';
+})
